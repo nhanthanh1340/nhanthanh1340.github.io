@@ -1,0 +1,379 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px;
+  background: white;
+}
+
+.aquarium {
+  width: 1500px;
+  height: 600px;
+  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  border: 8px solid #333;
+  border-top-width: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shark {
+  left: 100px;
+  top: 430px;
+  position: absolute;
+  animation-name: Shark;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes Shark {
+  0% {
+    left: 0;
+    transform: scaleX(1);
+  }
+  49% {
+    left: 1050px;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 1050px;
+    transform: scaleX(-1);
+  }
+  99% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 0;
+    transform: scaleX(1);
+  }
+}
+
+.sand {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background: #d4ac6e;
+}
+
+.rock {
+  position: absolute;
+  bottom: 40px;
+  background: gray;
+  border-radius: 50%;
+}
+.rock1 {
+  width: 110px;
+  height: 50px;
+  left: 100px;
+}
+.rock2 {
+  width: 70px;
+  height: 45px;
+  left: 500px;
+}
+
+.plant {
+  position: absolute;
+  bottom: 60px;
+  width: 12px;
+  background: green;
+  border-radius: 20px 20px 0 0;
+  animation: sway 2s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+.plant1 {
+  height: 90px;
+  left: 300px;
+}
+.plant2 {
+  height: 120px;
+  left: 320px;
+}
+.plant3 {
+  height: 100px;
+  left: 340px;
+}
+.plant4 {
+  height: 90px;
+  left: 750px;
+}
+.plant5 {
+  height: 120px;
+  left: 770px;
+}
+.plant6 {
+  height: 100px;
+  left: 790px;
+}
+@keyframes sway {
+  from {
+    transform: rotate(-5deg);
+  }
+
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+.turtle {
+  left: 100px;
+  top: 400px;
+  position: absolute;
+  animation-name: Rua;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes Rua {
+  0% {
+    left: 100px;
+    top: 400px;
+    transform: scaleX(1);
+  }
+  5% {
+    left: 300px;
+    top: 400px;
+    transform: scaleX(1);
+  }
+  15% {
+    left: 500px;
+    top: 300px;
+    transform: scaleX(1);
+  }
+  25% {
+    left: 700px;
+    top: 250px;
+    transform: scaleX(1);
+  }
+  35% {
+    left: 900px;
+    top: 350px;
+    transform: scaleX(1);
+  }
+  45% {
+    left: 1100px;
+    top: 400px;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 1200px;
+    top: 400px;
+    transform: scaleX(-1);
+  }
+  65% {
+    left: 1250px;
+    top: 400px;
+    transform: scaleX(-1);
+  }
+  75% {
+    left: 700px;
+    top: 300px;
+    transform: scaleX(-1);
+  }
+  95% {
+    left: 300px;
+    top: 400px;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 100px;
+    top: 400px;
+    transform: scaleX(1);
+  }
+}
+
+.fish {
+  left: 200px;
+  top: 200px;
+  position: absolute;
+  animation-name: Swim;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes Swim {
+  0% {
+    left: 0;
+    top: 200px;
+    transform: scaleX(1);
+  }
+  25% {
+    top: 150px;
+  }
+  49% {
+    left: 1000px;
+    top: 80px;
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  75% {
+    top: 200px;
+  }
+  99% {
+    left: 1;
+    top: 180px;
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.treasure {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.human1 {
+  left: 300px;
+  top: 200px;
+  position: absolute;
+  animation-name: Human1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes Human1 {
+  0% {
+    left: 150px;
+    top: 180px;
+  }
+  25% {
+    left: 1000px;
+    top: 120px;
+    transform: scaleX(1);
+  }
+  26% {
+    transform: scaleX(-1);
+  }
+  50% {
+    left: 150px;
+    top: 350px;
+    transform: scaleX(-1);
+  }
+  51% {
+    transform: scaleX(1);
+  }
+  75% {
+    left: 1000px;
+    top: 350px;
+    transform: scaleX(1);
+  }
+  76% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 150px;
+    top: 180px;
+    transform: scaleX(-1);
+  }
+}
+
+.human2 {
+  left: 300px;
+  top: 300px;
+  position: absolute;
+  animation-name: Human2;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes Human2 {
+  0% {
+    left: 300px;
+    top: 300px;
+  }
+  25% {
+    left: 500px;
+    top: 120px;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 600px;
+    top: 350px;
+    transform: scaleX(1);
+  }
+  51% {
+    transform: scaleX(1);
+  }
+  75% {
+    left: 900px;
+    top: 210px;
+    transform: scaleX(1);
+  }
+  76% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 300px;
+    top: 300px;
+    transform: scaleX(-1);
+  }
+}
+.bubble {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  animation: bubble 3s infinite;
+}
+.b1 {
+  left: 150px;
+  top: 10px;
+}
+.b2 {
+  left: 155px;
+  top: 5px;
+  animation-delay: 1s;
+}
+.b3 {
+  left: 145px;
+  top: 15px;
+  animation-delay: 2s;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+#musicBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffffcc;
+  cursor: pointer;
+}
+
+.light {
+  position: absolute;
+  width: 100px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-20deg);
+  left: 1000px;
+}
