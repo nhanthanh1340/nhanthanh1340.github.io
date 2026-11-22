@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Profile cá nhân</title>
+  </head>
+  <body>
+    <div>-----MENU------</div>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <br />
+      <a href="#hobby">Sở thích</a>
+      <br />
+      <a href="#skill">Kỹ năng</a>
+      <br />
+      <a href="#lich">Thời khóa biểu</a>
+      <br />
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <selection id="about">
+      <article>
+        <h1>Thông tin cá nhân</h1>
+        <img src="/CV/profilepic.png" alt="ảnh đại diện" width="200" />
+        <div><strong> Họ và tên: </strong> Trương Thành Nhân</div>
+        <div>Tôi là sinh viên ngành CNTT, Lớp CNTTA</div>
+      </article>
+    </selection>
+    <selection id="hobby">
+      <h1>Sở thích</h1>
+      <ul>
+        <li>Bóng đá</li>
+        <li>Âm nhạc</li>
+        <li>Chơi game</li>
+      </ul>
+    </selection>
+    <selection id="skill">
+      <h1>Kỹ năng</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+    </selection>
+    <selection id="lich">
+      <h1>Thời khóa biểu</h1>
+      <table border="2">
+        <tr>
+          <th>Ngày</th>
+          <th>Môn</th>
+        </tr>
+        <tr>
+          <td>Thứ 2</td>
+          <td>LTW , GDTC</td>
+        </tr>
+        <tr>
+          <td>Thứ 4</td>
+          <td>Triết học</td>
+        </tr>
+        <tr>
+          <td>Thứ 7</td>
+          <td>Toán rời rạc, LTCB</td>
+        </tr>
+      </table>
+    </selection>
+    <selection id="contact">
+      <h1>Liên hệ</h1>
+      <a href="https://www.facebook.com/counter.nhan/" target="_blank">
+        Facebook
+      </a>
+      <br />
+      <a href="https://github.com/nhanthanh1340" target="_blank"> Github </a>
+    </selection>
+    <h2>Liên hệ</h2>
+    <form>
+      <label> Họ tên: </label>
+      <input type="text" />
+      <br />
+      <label> Email: </label>
+      <input type="email" />
+      <br />
+      <label> Nội dung: </label>
+      <textarea rows="4" cols="25"></textarea>
+      <br />
+      <button type="submit">Gửi</button>
+    </form>
+  </body>
+</html>
