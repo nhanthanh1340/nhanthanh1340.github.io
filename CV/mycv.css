@@ -1,0 +1,70 @@
+body {
+  background: white;
+  font-family: "Times New Roman", sans-serif;
+  margin: auto;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  padding: 20px;
+  border-style: dashed;
+  border-width: 5px;
+  border-radius: 20px;
+  box-shadow: 10px;
+}
+img {
+  height: fit-content;
+  margin: 10px;
+  border: 3px solid black;
+}
+.info h1 {
+  margin-left: 0px;
+  border-left-style: groove;
+  padding-left: 100px;
+}
+.info p {
+  font-size: 150%;
+  border-left-style: groove;
+  padding-left: 100px;
+  margin-left: 0px;
+}
+.hello {
+  display: flex;
+  border-style: dashed;
+  border-width: 5px;
+  border-radius: 20px;
+  box-shadow: 10px;
+  margin-top: 20px;
+  padding-left: 50px;
+  align-items: center;
+  font-size: large;
+}
+.content {
+  border-style: dashed;
+  border-width: 5px;
+  border-radius: 20px;
+  box-shadow: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+table {
+  width: 200px;
+  font-size: large;
+  padding-left: 20px;
+}
+td,
+th {
+  padding: 5%;
+}
+.study {
+  font-size: larger;
+  border-style: dashed;
+  border-width: 5px;
+  border-radius: 20px;
+  box-shadow: 10px;
+  margin-top: 20px;
+  display: flex;
+}
